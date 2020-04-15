@@ -15,6 +15,12 @@
     显示某个表的结构：
     desc  表名；
 */
+create table area(
+    id int(11) primary key AUTO_INCREMENT NOT NULL COMMENT "地区id",
+    area_name varchar(10) NOT NULL COMMENT "地区名",
+    parent_id int(11) NOT NULL COMMENT "父级地区id"
+)ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='地区表';
+
 删除表：
 drop  table  表名；
 create table table1(id int, name varchar(10), sex char(1), age int);
